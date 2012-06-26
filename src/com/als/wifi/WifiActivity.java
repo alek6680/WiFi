@@ -18,6 +18,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 
+import android.R.anim;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
@@ -94,7 +95,7 @@ public class WifiActivity extends SherlockFragmentActivity implements
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		ActionBar actionBar = getSupportActionBar();
-		actionBar.setDisplayHomeAsUpEnabled(true);
+		// actionBar.setDisplayHomeAsUpEnabled(true);
 		// actionBar.setDisplayHomeAsUpEnabled(true);
 		// actionBar.setDisplayShowHomeEnabled(true);
 		// actionBar.setDisplayShowTitleEnabled(true);
@@ -527,14 +528,13 @@ public class WifiActivity extends SherlockFragmentActivity implements
 		// Handle item selection
 		switch (item.getItemId()) {
 		case android.R.id.home:
-			
-				Toast.makeText(getApplicationContext(), "test",
-						Toast.LENGTH_SHORT).show();
-			
-				Intent intent = new Intent(this, WifiActivity.class);
-				intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-				startActivity(intent);
-			
+
+			Toast.makeText(getApplicationContext(), "test", Toast.LENGTH_SHORT)
+					.show();
+
+			Intent intent = new Intent(this, WifiActivity.class);
+			intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+			startActivity(intent);
 
 			return true;
 
@@ -569,6 +569,7 @@ public class WifiActivity extends SherlockFragmentActivity implements
 			// and add the transaction to the back stack so the user can
 			// navigate back
 			transaction.replace(R.id.fragment_container, newFragment);
+			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 			transaction.addToBackStack(null);
 
@@ -599,7 +600,6 @@ public class WifiActivity extends SherlockFragmentActivity implements
 	protected void onStart() {
 
 		super.onStart();
-		
 
 	}
 
