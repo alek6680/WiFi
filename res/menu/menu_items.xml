@@ -3,17 +3,19 @@
 
     <item
         android:id="@+id/Sync"
-        
+        android:icon="@drawable/ic_menu_refresh"
         android:showAsAction="ifRoom|withText"
         android:title="@string/sync"/>
     <item
         android:id="@+id/AddNew"
+        android:icon="@drawable/ic_menu_add"
         android:showAsAction="ifRoom|withText"
         android:title="Add New"/>
     <item
         android:id="@+id/ShowAll"
+        android:icon="@drawable/ic_menu_sort_alphabetically"
         android:showAsAction="ifRoom|withText"
-        android:title="Show"/>
+        android:title="Show All"/>
     <item
         android:id="@+id/OnOff"
         android:showAsAction="ifRoom|withText"

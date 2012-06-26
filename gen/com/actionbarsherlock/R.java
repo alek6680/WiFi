@@ -787,9 +787,15 @@ containing a value of this type.
         public static final int abs__tab_selected_holo=0x7f020052;
         public static final int abs__tab_selected_pressed_holo=0x7f020053;
         public static final int abs__tab_unselected_pressed_holo=0x7f020054;
-        public static final int custom_shape=0x7f020055;
-        public static final int ic_launcher=0x7f020056;
-        public static final int icon=0x7f020057;
+        public static final int btn_toggle_off=0x7f020055;
+        public static final int btn_toggle_on=0x7f020056;
+        public static final int custom_shape=0x7f020057;
+        public static final int ic_launcher=0x7f020058;
+        public static final int ic_menu_add=0x7f020059;
+        public static final int ic_menu_refresh=0x7f02005a;
+        public static final int ic_menu_sort_alphabetically=0x7f02005b;
+        public static final int icon=0x7f02005c;
+        public static final int sync=0x7f02005d;
     }
     public static final class id {
         public static final int AddNew=0x7f050036;
@@ -845,7 +851,7 @@ containing a value of this type.
         public static final int showHome=0x7f050005;
         public static final int showTitle=0x7f050007;
         public static final int tabMode=0x7f050003;
-        public static final int textView1=0x7f050030;
+        public static final int textViewAP=0x7f050030;
         public static final int two=0x7f050034;
         public static final int useLogo=0x7f050004;
         public static final int wrap_content=0x7f050000;
