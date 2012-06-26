@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/Sync"
+        
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/sync"/>
+    <item
+        android:id="@+id/AddNew"
+        android:showAsAction="ifRoom|withText"
+        android:title="Add New"/>
+    <item
+        android:id="@+id/ShowAll"
+        android:showAsAction="ifRoom|withText"
+        android:title="Show"/>
+    <item
+        android:id="@+id/OnOff"
+        android:showAsAction="ifRoom|withText"
+        android:title="On/Off"/>
+
+</menu>
